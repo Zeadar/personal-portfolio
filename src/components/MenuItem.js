@@ -1,13 +1,16 @@
 import "./MenuItem.css"
 
-function MenuItem() {
+function MenuItem(props) {
     return (
         <ul>
             <li>
-                <a href="index.html">MenuItem</a>
+                <a href="index.html">{props.item1}</a>
             </li>
             <li>
-                <a href="">Thing</a>
+                <a href="index.html">{props.item2}</a>
+            </li>
+            <li>
+                <a href="index.html">{props.item3}</a>
             </li>
         </ul>
     )
